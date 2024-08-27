@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-//            Text("Hello, world! nice   awesome").bold().foregroundColor(.primary)
-//            Button(action:{
-//                print("hola wey")
-//            }, label: {
-//                Text("button")
-//            })
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world! nice   awesome").bold().foregroundColor(.primary)
+            Button(action:{
+                print("hola wey")
+            }, label: {
+                Text("button")
+            })
             Rectangle()
                 .foregroundColor(.red)
                 .frame(width: 300,height: 100)

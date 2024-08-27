@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct TextFieldExample: View {
+    @State var email = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextField("Email", text: $email).keyboardType(.emailAddress)
+            .padding(16)
+            .background(.gray.opacity(0.1))
+            .cornerRadius(16)
+            .padding(.horizontal,32)
+            .onChange(of: email) { newValue in
+                print(newValue)
+            }
+            
     }
 }
 
